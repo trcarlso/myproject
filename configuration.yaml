@@ -13,26 +13,6 @@ homeassistant:
   # Customization file
   customize: !include customize.yaml
     # Add an entry for each entity that you want to overwrite.
-    device_tracker.laurensiphone2:
-      friendly_name: Lauren
-    device_tracker.travissiphone:
-      friendly_name: Travis
-    media_player.kitchen_home:
-      friendly_name: Google Home
-    media_player.roku_3_hd:
-      friendly_name: Roku
-    switch.living_room_light:
-      friendly_name: Living Room Lamp
-      icon: mdi:lamp
-    switch.tv_light:
-      friendly_name: TV Lights
-      icon: mdi:lamp
-    switch.window_light:
-      friendly_name: Window Lamp
-      icon: mdi:lamp      
-    light.lamp_a_10:
-      friendly_name: Nightstand
-      icon: mdi:lamp      
 # Show links to resources in log and frontend
 #introduction:
 
@@ -145,53 +125,5 @@ sensor:
 
 group: !include groups.yaml
 # Example configuration.yaml entry
-  default_view:
-    view: yes
-    icon: mdi:home 
-    entities:
-      - group.living_room
-      - group.bedroom
-      - group.kitchen
-      - group.family
-      - group.climate
-      - camera.usps_mail
-      - sensor.usps_mail
-      - sensor.fedex
-      - sensor.remote_a_3
-      - sensor.remote_a_4
-      - sensor.remote_a_5
-      - weblink.router
-      - weblink.vera
-  living_room:
-    name: Living Room
-    entities:
-      - switch.living_room_light
-      - switch.tv_light
-      - switch.window_light
-      - media_player.roku_3_hd
-      - light.lamp_b_11
-  bedroom:
-    name: Bedroom
-    entities:
-      - light.lamp_a_10      
-  kitchen:
-    name: Kitchen
-    entities:
-      - media_player.kitchen_home
-  climate:
-    name: Climate
-    view: no
-    entities:
-      - sensor.embedded_humidity_sensor_13
-      - sensor.embedded_humidity_sensor_15
-      - sensor.embedded_temperature_sensor_12
-      - sensor.embedded_temperature_sensor_14
-      - sun.sun
-  family:
-    name: Family
-    view: no
-    entities:
-      - device_tracker.travissiphone
-      - device_tracker.laurensiphone2
 automation: !include automations.yaml
 script: !include scripts.yaml

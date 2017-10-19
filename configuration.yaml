@@ -110,19 +110,19 @@ switch:
     gpio: 17
     switches:
       tv_light:
-        pulselength: 200
-        code_on: 1234567
-        code_off: 1234568
+        pulselength: 181
+        code_on: 348260,174689,349316,87347,174659,174692,135168,330307,545924,87076,349313
+        code_off: 87356,349408,174652,349411,152892,87356,174659
         signal_repetitions: 15
       window_light:
-        pulselength: 200
-        code_on: 987654
-        code_off: 133742
+        pulselength: 181
+        code_on: 349251,87491,32768,8192,136643,174980,698500,174659,349960
+        code_off: 87500,349328,545936,174992,165324,698384,349316,174668,174980,1392784,8192,174860,87244,172492
         signal_repetitions: 15
       living_room_light:
         pulselength: 200
-        code_on: 654321,565874,233555,149874
-        code_off: 654320,565873,233554,149873
+        code_on: 273924,87811,348676,174339,175107,1,165635,88060,697352,32768
+        code_off: 87820,43276,174348,32768,175620
         signal_repetitions: 15
         
 # UPS Shipment tracking
